@@ -12,14 +12,12 @@ class ViewController: UIViewController {
                             
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        let zoomableView: DTZoomableView = DTZoomableView(frame: CGRectMake(10, 100, 300, 300))
+        zoomableView.image = UIImage(named: "sample_image")
+        self.view.addSubview(zoomableView)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

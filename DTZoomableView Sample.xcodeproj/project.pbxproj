@@ -12,6 +12,7 @@
 		8D6939EE195A018A00A8D080 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D6939EC195A018A00A8D080 /* Main.storyboard */; };
 		8D6939F0195A018A00A8D080 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D6939EF195A018A00A8D080 /* Images.xcassets */; };
 		8D6939FC195A018A00A8D080 /* DTZoomableView_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6939FB195A018A00A8D080 /* DTZoomableView_SampleTests.swift */; };
+		8D693A08195A01F000A8D080 /* DTZoomableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D693A07195A01F000A8D080 /* DTZoomableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		8D6939F5195A018A00A8D080 /* DTZoomableView SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DTZoomableView SampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D6939FA195A018A00A8D080 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D6939FB195A018A00A8D080 /* DTZoomableView_SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTZoomableView_SampleTests.swift; sourceTree = "<group>"; };
+		8D693A07195A01F000A8D080 /* DTZoomableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DTZoomableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		8D6939E5195A018A00A8D080 /* DTZoomableView Sample */ = {
 			isa = PBXGroup;
 			children = (
+				8D693A06195A01D200A8D080 /* DTZoomableView */,
 				8D6939E8195A018A00A8D080 /* AppDelegate.swift */,
 				8D6939EA195A018A00A8D080 /* ViewController.swift */,
 				8D6939EC195A018A00A8D080 /* Main.storyboard */,
@@ -108,6 +111,14 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		8D693A06195A01D200A8D080 /* DTZoomableView */ = {
+			isa = PBXGroup;
+			children = (
+				8D693A07195A01F000A8D080 /* DTZoomableView.swift */,
+			);
+			path = DTZoomableView;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -208,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D693A08195A01F000A8D080 /* DTZoomableView.swift in Sources */,
 				8D6939EB195A018A00A8D080 /* ViewController.swift in Sources */,
 				8D6939E9195A018A00A8D080 /* AppDelegate.swift in Sources */,
 			);
@@ -328,6 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "DTZoomableView Sample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -339,6 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "DTZoomableView Sample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
