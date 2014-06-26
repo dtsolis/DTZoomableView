@@ -119,6 +119,23 @@ class DTZoomableView: UIScrollView, UIScrollViewDelegate {
     func viewForZoomingInScrollView(scrollView: UIScrollView!) -> UIView! {
         return self.imageView!
     }
+    
+    
+    
+    /// Enables or not the zoom capability.
+    func setZoomEnabled(enabled: Bool) {
+        if enabled {
+            self.maximumZoomScale = 5.0
+        }
+        else {
+            self.maximumZoomScale = 1.0
+        }
+    }
+    
+    /// Returns 'true' if the zoom is enabled
+    func isZoomEnabled() -> Bool {
+        return self.maximumZoomScale > 1.0
+    }
 }
 
 
